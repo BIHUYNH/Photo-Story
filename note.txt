@@ -1,0 +1,3 @@
+﻿file login lấy session là name_user và tên file là login.php và logout.php để kết thúc session
+- tạo page cho hình :đường dẫn file vô htdocs -> tạo thư mục tên timeline để chứa project -> tạo thư mục có tên album để chứa css,js,index của page
+- tạo file có tên là upload.php để úp file hình
