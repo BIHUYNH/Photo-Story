@@ -64,16 +64,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,300,700' rel='stylesheet' type='text/css'>
     <!-- Animate -->
-    <link rel="stylesheet" href="/timeline/upload/css/animate.css">
+    <link rel="stylesheet" href="/Photo-Story/upload/css/animate.css">
     <!-- Flexslider -->
-    <link rel="stylesheet" href="/timeline/upload/css/flexslider.css">
+    <link rel="stylesheet" href="/Photo-Story/upload/css/flexslider.css">
     <!-- Icomoon -->
-    <link rel="stylesheet" href="/timeline/upload/css/icomoon.css">
+    <link rel="stylesheet" href="/Photo-Story/upload/css/icomoon.css">
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="/timeline/upload/css/bootstrap.css">
-    <link rel="stylesheet" href="/timeline/upload/css/style.css">
+    <link rel="stylesheet" href="/Photo-Story/upload/css/bootstrap.css">
+    <link rel="stylesheet" href="/Photo-Story/upload/css/style.css">
     <!-- Modernizr JS -->
-    <script src="/timeline/upload/js/modernizr-2.6.2.min.js"></script>
+    <script src="/Photo-Story/upload/js/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
     
@@ -172,19 +172,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div> <!-- END fh5co-page -->
 
     <!-- jQuery -->
-    <script src="/timeline/upload/js/jquery.min.js"></script>
+    <script src="/Photo-Story/upload/js/jquery.min.js"></script>
     <!-- jQuery Easing -->
-    <script src="/timeline/upload/js/jquery.easing.1.3.js"></script>
+    <script src="/Photo-Story/upload/js/jquery.easing.1.3.js"></script>
     <!-- Bootstrap -->
-    <script src="/timeline/upload/js/bootstrap.min.js"></script>
+    <script src="/Photo-Story/upload/js/bootstrap.min.js"></script>
     <!-- Waypoints -->
-    <script src="/timeline/upload/js/jquery.waypoints.min.js"></script>
+    <script src="/Photo-Story/upload/js/jquery.waypoints.min.js"></script>
     <!-- Stellar Parallax -->
-    <script src="/timeline/upload/js/jquery.stellar.min.js"></script>
+    <script src="/Photo-Story/upload/js/jquery.stellar.min.js"></script>
     <!-- Flexslider -->
-    <script src="/timeline/upload/js/jquery.flexslider-min.js"></script>
+    <script src="/Photo-Story/upload/js/jquery.flexslider-min.js"></script>
     <!-- Main JS -->
-    <script src="/timeline/upload/js/main.js"></script>
+    <script src="/Photo-Story/upload/js/main.js"></script>
     
     </body>
 </html>
