@@ -80,45 +80,45 @@ if ($_SERVER["REQUEST_METHOD"]  == "POST") {
 
 <!--===============================================================================================-->	
 
-	<link rel="icon" type="image/png" href="/adp/login/images/icons/favicon.ico"/>
+	<link rel="icon" type="image/png" href="/Photo-Story/login/images/icons/favicon.ico"/>
 
 <!--===============================================================================================-->
 
-	<link rel="stylesheet" type="text/css" href="/adp/login/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/Photo-Story/login/vendor/bootstrap/css/bootstrap.min.css">
 
 <!--===============================================================================================-->
 
-	<link rel="stylesheet" type="text/css" href="/adp/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/Photo-Story/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
 <!--===============================================================================================-->
 
-	<link rel="stylesheet" type="text/css" href="/adp/login/fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="/Photo-Story/login/fonts/iconic/css/material-design-iconic-font.min.css">
 
 <!--===============================================================================================-->
 
-	<link rel="stylesheet" type="text/css" href="/adp/login/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="/Photo-Story/login/vendor/animate/animate.css">
 
 <!--===============================================================================================-->	
 
-	<link rel="stylesheet" type="text/css" href="/adp/login/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="/Photo-Story/login/vendor/css-hamburgers/hamburgers.min.css">
 
 <!--===============================================================================================-->
 
-	<link rel="stylesheet" type="text/css" href="/adp/login/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="/Photo-Story/login/vendor/animsition/css/animsition.min.css">
 
 <!--===============================================================================================-->
 
-	<link rel="stylesheet" type="text/css" href="/adp/login/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="/Photo-Story/login/vendor/select2/select2.min.css">
 
 <!--===============================================================================================-->	
 
-	<link rel="stylesheet" type="text/css" href="/adp/login/vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="/Photo-Story/login/vendor/daterangepicker/daterangepicker.css">
 
 <!--===============================================================================================-->
 
-	<link rel="stylesheet" type="text/css" href="/adp/login/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/Photo-Story/login/css/util.css">
 
-	<link rel="stylesheet" type="text/css" href="/adp/login/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/Photo-Story/login/css/main.css">
 
 <!--===============================================================================================-->
 
@@ -130,7 +130,7 @@ if ($_SERVER["REQUEST_METHOD"]  == "POST") {
 
 	<div class="limiter">
 
-		<div class="container-login100" style="background-image: url('/adp/login/images/bg-01.jpg');">
+		<div class="container-login100" style="background-image: url('/Photo-Story/login/images/bg-01.jpg');">
 
 			<div class="wrap-login100">
 
@@ -224,35 +224,35 @@ if ($_SERVER["REQUEST_METHOD"]  == "POST") {
 
 <!--===============================================================================================-->
 
-	<script src="/adp/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="/Photo-Story/login/vendor/jquery/jquery-3.2.1.min.js"></script>
 
 <!--===============================================================================================-->
 
-	<script src="/adp/login/vendor/animsition/js/animsition.min.js"></script>
+	<script src="/Photo-Story/login/vendor/animsition/js/animsition.min.js"></script>
 
 <!--===============================================================================================-->
 
-	<script src="/adp/login/vendor/bootstrap/js/popper.js"></script>
+	<script src="/Photo-Story/login/vendor/bootstrap/js/popper.js"></script>
 
-	<script src="/adp/login/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<!--===============================================================================================-->
-
-	<script src="/adp/login/vendor/select2/select2.min.js"></script>
+	<script src="/Photo-Story/login/vendor/bootstrap/js/bootstrap.min.js"></script>
 
 <!--===============================================================================================-->
 
-	<script src="/adp/login/vendor/daterangepicker/moment.min.js"></script>
-
-	<script src="/adp/login/vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="/Photo-Story/login/vendor/select2/select2.min.js"></script>
 
 <!--===============================================================================================-->
 
-	<script src="/adp/login/vendor/countdowntime/countdowntime.js"></script>
+	<script src="/Photo-Story/login/vendor/daterangepicker/moment.min.js"></script>
+
+	<script src="/Photo-Story/login/vendor/daterangepicker/daterangepicker.js"></script>
 
 <!--===============================================================================================-->
 
-	<script src="/adp/login/js/main.js"></script>
+	<script src="/Photo-Story/login/vendor/countdowntime/countdowntime.js"></script>
+
+<!--===============================================================================================-->
+
+	<script src="/Photo-Story/login/js/main.js"></script>
 
 </body>
 
