@@ -19,7 +19,31 @@ class Database
             }
         }
         return $data;
-    } 
+    }
+    public function insert($table, array $data)
+    {
+        $sql = "INSERT INTO {$table} ";
+        $columns = implode(',', array_keys($data));
+        $values  = "";
+        $sql .= '(' . $columns . ')';
+        foreach($data as $field => $value) {
+            if(is_string($value)) {
+                $values .= "'". mysqli_real_escape_string($this->link,$value) ."',";
+            } else {
+                $values .= mysqli_real_escape_string($this->link,$value) . ',';
+            }
+        }
+        $values = substr($values, 0, -1);
+        $sql .= " VALUES (" . $values . ')';
+        mysqli_query($this->link, $sql) or die("Lỗi  query  insert ----" .mysqli_error($this->link));
+        return mysqli_insert_id($this->link);
+    }
+    public function delete ($table ,  $id )
+    {
+        $sql = "DELETE FROM {$table} WHERE id = $id ";
+        mysqli_query($this->link,$sql) or die (" Lỗi Truy Vấn delete   --- " .mysqli_error($this->link));
+        return mysqli_affected_rows($this->link);
+    }
     public function fetchID($table , $id )
     {
         $sql = "SELECT * FROM {$table} WHERE id = $id ";
@@ -48,7 +72,44 @@ class Database
         }
         return $data;
     }
-    
+    public function countTable($table)
+
+        {
+
+            $sql = "SELECT id FROM  {$table}";
+
+            $result = mysqli_query($this->link, $sql) or die("Lỗi Truy Vấn countTable----" .mysqli_error($this->link));
+
+            $num = mysqli_num_rows($result);
+
+            return $num;
+
+        }
+    public  function fetchJone($table,$sql ,$page = 0,$row ,$pagi = false )
+    {       
+        $data = [];
+        if ($pagi == true )
+        {
+            $total = $this->countTable($table);
+            $sotrang = ceil($total / $row);
+            $start = ($page - 1 ) * $row ;
+            $sql .= " LIMIT $start,$row";
+            $data = [ "page" => $sotrang];
+            $result = mysqli_query($this->link,$sql) or die("Lỗi truy vấn fetchJone ---- " .mysqli_error($this->link));
+        }
+        else
+        {
+            $result = mysqli_query($this->link,$sql) or die("Lỗi truy vấn fetchJone ---- " .mysqli_error($this->link));
+        }   
+        if( $result)
+        {
+            while ($num = mysqli_fetch_assoc($result))
+            {
+                $data[] = $num;
+            }
+        }
+        return $data;
+    }
     
 
 }   

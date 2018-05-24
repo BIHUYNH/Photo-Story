@@ -50,7 +50,8 @@
 			<ul>
 				<?php if (isset($_SESSION['name_user'])): ?>
 				<li><h4><a href="#"><?php echo $_SESSION['name_user'] ?></a></h4></li>
-				<li><h4><a href="upload.php">Upload</a></h4></li>
+        <li><h4><a href="upload.php">Upload</a></h4></li>
+				<li><h4><a href="delPic.php">Delete</a></h4></li>
 				<li><h4><a href="logout.php">Log out</a></h4></li>
 				<?php else: ?>
 				<li><h2><a href="login.php" data-nav-section="home">Login</a></h2></li>

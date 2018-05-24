@@ -49,7 +49,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<span class="">
                      PORTRAIT SESSION
                 </span>
-					<img src="/Photo-Story/food/<?php echo $item['picture']?>" thumb-url="/Photo-Story/food/<?php echo $item['picture']?>" alt="" />
+					<img src="/timeline/food/<?php echo $item['picture']?>" thumb-url="/timeline/food/<?php echo $item['picture']?>" alt="" />
 				</div>
 				<?php endforeach?>
 				
@@ -65,7 +65,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="w3l_footer">
 		<div class="container">
 			<div class="col-md-4">
-				<h2><a href="/../Photo-Story/"><i class="fa fa-camera-retro" aria-hidden="true"></i> TimeLine NSS</a></h2>
+				<h2><a href="/../timeline/"><i class="fa fa-camera-retro" aria-hidden="true"></i> TimeLine NSS</a></h2>
 			</div>
 			<div class="col-md-8 botttom-nav-agileits">
 				<div class="w3l-social team_agile _icons">

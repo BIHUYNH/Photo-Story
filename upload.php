@@ -7,13 +7,16 @@ echo "<script>alert('Bạn phải đăng nhập mới được dùng chức năn
 $month = $db->fetchAll("thang");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $data = [
-    "month_id" => postInput('month_id'),    
+    "month_id" => postInput('month_id'), 
+    "description" => postInput('description') 
     ];
     $error = [];
     if (postInput('month_id') == '') {
         $error['month_id'] = " Mời bạn chọn album";
     }
-    
+    if (postInput('description') == '') {
+        $error['description'] = " Mời bạn điền mô tả cho ảnh";
+    }
     if (empty($error)) {
         if (isset($_FILES['thumbar'])) {
             $file_name = $_FILES['thumbar']['name'];
@@ -73,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="/Photo-Story/upload/css/bootstrap.css">
     <link rel="stylesheet" href="/Photo-Story/upload/css/style.css">
     <!-- Modernizr JS -->
-    <script src="/Photo-Story/upload/js/modernizr-2.6.2.min.js"></script>
+    <script src="/timeline/upload/js/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
     
@@ -89,6 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <?php if (isset($_SESSION['name_user'])): ?>
                     <li><a href="index.php"><?php echo $_SESSION['name_user'] ?></a></li>
                     <li><a href="upload.php">Upload</a></li>
+                    <li><a href="delPic.php">Delete</a></li>
                     <li><a href="logout.php">Log out</a></li>
                     <?php else: ?>
                     <li><a href="login.php" data-nav-section="home">Login</a></li>
@@ -131,7 +135,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <p class="text-danger"> <?php echo $error['month_id']?></p>
                     <?php endif ?>                            
                 </div>
-            </div>
+        </div>
+        <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 control-label">Mô tả</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="description">
+                    <?php if (isset($error['description'])):?>
+                        <p class="text-danger"> <?php echo $error['description']?></p>
+                    <?php endif ?>                            
+                </div>
+        </div>
             <br><p class="animate-box"><button type="submit" class="btn btn-primary btn-lg">Upload</button></p>
     </form>
 					
@@ -172,19 +185,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div> <!-- END fh5co-page -->
 
     <!-- jQuery -->
-    <script src="/Photo-Story/upload/js/jquery.min.js"></script>
+    <script src="/timeline/upload/js/jquery.min.js"></script>
     <!-- jQuery Easing -->
-    <script src="/Photo-Story/upload/js/jquery.easing.1.3.js"></script>
+    <script src="/timeline/upload/js/jquery.easing.1.3.js"></script>
     <!-- Bootstrap -->
-    <script src="/Photo-Story/upload/js/bootstrap.min.js"></script>
+    <script src="/timeline/upload/js/bootstrap.min.js"></script>
     <!-- Waypoints -->
-    <script src="/Photo-Story/upload/js/jquery.waypoints.min.js"></script>
+    <script src="/timeline/upload/js/jquery.waypoints.min.js"></script>
     <!-- Stellar Parallax -->
-    <script src="/Photo-Story/upload/js/jquery.stellar.min.js"></script>
+    <script src="/timeline/upload/js/jquery.stellar.min.js"></script>
     <!-- Flexslider -->
-    <script src="/Photo-Story/upload/js/jquery.flexslider-min.js"></script>
+    <script src="/timeline/upload/js/jquery.flexslider-min.js"></script>
     <!-- Main JS -->
-    <script src="/Photo-Story/upload/js/main.js"></script>
+    <script src="/timeline/upload/js/main.js"></script>
     
     </body>
 </html>
