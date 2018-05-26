@@ -32,7 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($id_insert) {
            move_uploaded_file($file_tmp,$part.$file_name);
             $_SESSION['success'] = " Thêm mới thành công";
-            echo "<script>alert('Thêm ảnh vào album thành công');location.href='upload.php'</script>";
+            //echo "<script>alert('Thêm ảnh vào album thành công');location.href='upload.php'</script>";
+            _debug(move_uploaded_file($part.$file_name);
         }else{
             $_SESSION['error'] = " Thêm mới thất bại";
         }
@@ -76,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="/Photo-Story/upload/css/bootstrap.css">
     <link rel="stylesheet" href="/Photo-Story/upload/css/style.css">
     <!-- Modernizr JS -->
-    <script src="/timeline/upload/js/modernizr-2.6.2.min.js"></script>
+    <script src="/Photo-Story/upload/js/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
     
@@ -116,8 +117,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label for="inputEmail3" class="col-sm-3 control-label">Hình ảnh</label>
             <div class="col-sm-5">
                 <input type="file" class="form-control" id="inputEmail3" name="thumbar">
-                <?php if (isset($error['name'])):?>
-                    <p class="text-danger"> <?php echo $error['name']?></p>
+                <?php if (isset($error['thumbar'])):?>
+                    <p class="text-danger"> <?php echo $error['thumbar']?></p>
                 <?php endif ?>
             </div>
         </div>
@@ -185,19 +186,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div> <!-- END fh5co-page -->
 
     <!-- jQuery -->
-    <script src="/timeline/upload/js/jquery.min.js"></script>
+    <script src="/Photo-Story/upload/js/jquery.min.js"></script>
     <!-- jQuery Easing -->
-    <script src="/timeline/upload/js/jquery.easing.1.3.js"></script>
+    <script src="/Photo-Story/upload/js/jquery.easing.1.3.js"></script>
     <!-- Bootstrap -->
-    <script src="/timeline/upload/js/bootstrap.min.js"></script>
+    <script src="/Photo-Story/upload/js/bootstrap.min.js"></script>
     <!-- Waypoints -->
-    <script src="/timeline/upload/js/jquery.waypoints.min.js"></script>
+    <script src="/Photo-Story/upload/js/jquery.waypoints.min.js"></script>
     <!-- Stellar Parallax -->
-    <script src="/timeline/upload/js/jquery.stellar.min.js"></script>
+    <script src="/Photo-Story/upload/js/jquery.stellar.min.js"></script>
     <!-- Flexslider -->
-    <script src="/timeline/upload/js/jquery.flexslider-min.js"></script>
+    <script src="/Photo-Story/upload/js/jquery.flexslider-min.js"></script>
     <!-- Main JS -->
-    <script src="/timeline/upload/js/main.js"></script>
+    <script src="/Photo-Story/upload/js/main.js"></script>
     
     </body>
 </html>
